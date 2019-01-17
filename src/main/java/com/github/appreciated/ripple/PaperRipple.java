@@ -7,7 +7,7 @@ import com.vaadin.flow.component.dependency.HtmlImport;
 @Tag("paper-ripple")
 @HtmlImport("bower_components/paper-ripple/paper-ripple.html")
 /**
- * This Component can be used to add a specific click effect to a component that usually lacks of one.
+ * This Component can be used to add a "ripple" (ink ripple) click effect to a component.
  */
 public class PaperRipple extends Component {
 

@@ -3,13 +3,12 @@
 
     <groupId>com.github.appreciated</groupId>
     <artifactId>paper-ripple</artifactId>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <name>paper-ripple</name>
-    <description>Integration of paper-ripple for Vaadin 11</description>
+    <description>Integration of paper-ripple for Vaadin 10</description>
 
     <properties>
-        <vaadin.version>10.0.7</vaadin.version>
-
+        <vaadin.version>10.0.10</vaadin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

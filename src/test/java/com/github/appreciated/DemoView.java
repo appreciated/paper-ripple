@@ -15,9 +15,28 @@ import com.vaadin.flow.router.Route;
 public class DemoView extends VerticalLayout {
 
     public DemoView() {
-        add(getLayout(new PaperRippleDiv()));
-        add(getLayout(new PaperRippleHorizontalLayout()));
-        add(getLayout(new PaperRippleVerticalLayout()));
+        PaperRippleDiv div = new PaperRippleDiv();
+        div.getElement().getStyle()
+                .set("border", "1px solid black")
+                .set("width", "300px")
+                .set("height", "50px");
+        div.addClickListener(clickEvent -> {/* Div was clicked */});
+
+        PaperRippleHorizontalLayout hl = new PaperRippleHorizontalLayout();
+        hl.getElement().getStyle()
+                .set("border", "1px solid black")
+                .set("width", "300px")
+                .set("height", "50px");
+        hl.addClickListener(clickEvent -> {/* HorizontalLayout was clicked */});
+
+        PaperRippleVerticalLayout vl = new PaperRippleVerticalLayout();
+        vl.getElement().getStyle()
+                .set("border", "1px solid black")
+                .set("width", "300px")
+                .set("height", "50px");
+        vl.addClickListener(clickEvent -> {/* VerticalLayout was clicked */});
+
+        add(div, hl, vl);
         setAlignItems(Alignment.CENTER);
     }
 
