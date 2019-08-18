@@ -2,10 +2,12 @@ package com.github.appreciated.ripple;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Tag;
-import com.vaadin.flow.component.dependency.HtmlImport;
+import com.vaadin.flow.component.dependency.JsModule;
+import com.vaadin.flow.component.dependency.NpmPackage;
 
 @Tag("paper-ripple")
-@HtmlImport("bower_components/paper-ripple/paper-ripple.html")
+@NpmPackage(value = "@polymer/paper-ripple",version = "3.0.1")
+@JsModule("@polymer/paper-ripple/paper-ripple.js")
 /**
  * This Component can be used to add a "ripple" (ink ripple) click effect to a component.
  */

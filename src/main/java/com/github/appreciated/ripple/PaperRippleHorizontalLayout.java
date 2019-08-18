@@ -1,10 +1,9 @@
 package com.github.appreciated.ripple;
 
-import com.vaadin.flow.component.ClickNotifier;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 
-public class PaperRippleHorizontalLayout extends HorizontalLayout implements ClickNotifier {
+public class PaperRippleHorizontalLayout extends HorizontalLayout {
     public PaperRippleHorizontalLayout() {
         getStyle().set("position", "relative");
         add(getRipple());
